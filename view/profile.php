@@ -179,7 +179,6 @@
 						</div>
 				</div>
 					<?php } ?>
-				
 				<?php } ?>
 				<nav class="mt-2">
   					<ul class="pagination justify-content-center">
