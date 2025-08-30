@@ -1,0 +1,43 @@
+@import url("bootstrap.min.css");
+* {
+	padding: 0;
+	margin: 0;
+}
+.avatar {
+	margin-right: 10px;
+}
+.btn-registration:hover {
+	border: 1px solid #0d6efd;
+}
+
+/* Calendar  */
+
+#calendar3 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar3 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar3 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar3 tbody td:nth-child(n+6), #calendar3 .holiday {
+  color: #dc3545;
+  font-weight: bold;
+}
+#calendar3 tbody td.today {
+  background-color: #0d6efd;
+  color: white;
+}
+/* */
+/* List of tasks on profile page */
+
+.tasks_list {
+	background-color: #cfe2ff;
+	border-radius: 15px;
+}
