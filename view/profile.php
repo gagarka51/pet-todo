@@ -171,9 +171,9 @@
     								?>
 
     							<div class="d-flex justify-content-around">
-    								<a href="edit_task.php?<?=$task['id']; ?>" class="btn btn-primary" title="Редактировать"><img src="../assets/img/pencil.svg" alt="иконка редактирования задачи"></a>
-    								<a href="finish_task.php?<?=$task['id']; ?>" class="btn btn-success" title="Завершить"><img src="../assets/img/calendar2-x.svg" alt="иконка завершения задачи"></a>
-    								<a href="../handlers/delete_task.php?<?=$task['id']; ?>" class="btn btn-danger" title="Удалить"><img src="../assets/img/trash3.svg" alt="иконка удаления задачи"></a>
+    								<a href="edit_task.php?task_id=<?=$task['id']; ?>" class="btn btn-primary" title="Редактировать"><img src="../assets/img/pencil.svg" alt="иконка редактирования задачи"></a>
+    								<a href="../handlers/finish_task.php?task_id=<?=$task['id']; ?>" class="btn btn-success" title="Завершить"><img src="../assets/img/calendar2-x.svg" alt="иконка завершения задачи"></a>
+    								<a href="../handlers/delete_task.php?task_id=<?=$task['id']; ?>" class="btn btn-danger" title="Удалить"><img src="../assets/img/trash3.svg" alt="иконка удаления задачи"></a>
     							</div>
   							</div>
 						</div>
