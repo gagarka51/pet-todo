@@ -9,7 +9,6 @@
 	$user_id = $_SESSION['user_id'];
 	$user = $db->query("SELECT * FROM `users` WHERE `id` ='$user_id'")->fetch_assoc();
 	$tasks = $db->query("SELECT * FROM `tasks` WHERE `user_id` ='$user_id'")->fetch_all(MYSQLI_ASSOC);
-	var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -159,7 +158,7 @@
 					?>
 				<div class="col-sm-4">	
 						<div class="card mt-3 mb-2">
-  							<div class="card-header"><?=$task['title']; ?></div>
+  							<div class="card-header fw-semibold"><?=$task['title']; ?></div>
   							<div class="card-body">
     							<p class="card-text"><?=$task['description']; ?></p>
     			
