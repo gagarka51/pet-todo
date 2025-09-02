@@ -8,6 +8,7 @@ class User
 	private $dateOfBirth;
 	private $email;
 	protected $password;
+	protected $table = "users";
 
 	/*public function getUser($email)
 	{
