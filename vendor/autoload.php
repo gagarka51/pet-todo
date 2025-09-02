@@ -2,9 +2,7 @@
 
 function _autoload($className)
 {
-	$fileName = strtolower($className) . ".php";
-
-	//$file =;
+	$file = $className . ".php";
 	
 	if (file_exists($file) == false) {
 		return false;
