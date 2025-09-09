@@ -1,18 +1,13 @@
 <?php
 
-function autoloadClasses($className)
+spl_autoload_register(function ($className)
 {
-	$path = __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
-	$file = $path . str_replace("App", "app", str_replace("\\", DIRECTORY_SEPARATOR, $className)) . ".php";
+	$path = dirname(__FILE__);
+	$file = $path . DIRECTORY_SEPARATOR . str_replace("\\", DIRECTORY_SEPARATOR, $className) . ".php";
 
 	if (file_exists($file) == false) {
-		echo "да!";
-		//return false;
-	} else {
-		echo "нет";
+		return false;
 	}
 
-	//require_once $file;
-}
-autoloadClasses("App\Controllers\LoginController");
-spl_autoload_register("autoloadClasses");
+	require_once $file;
+});
