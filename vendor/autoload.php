@@ -1,12 +1,15 @@
 <?php
 
-function _autoload($className)
+function autoloadClasses($className)
 {
-	$file = $className . ".php";
+	$path = __DIR__ . "../";
+	$file = $path . $className . ".php";
 	
 	if (file_exists($file) == false) {
 		return false;
 	}
 
-	include($file);
+	require_once $file;
 }
+
+spl_autoload_register("autoloadClasses");
