@@ -1,3 +1,8 @@
+<?php 
+
+require("../../resources/templates/header.php");
+
+?>
 <main>
 	<div class="container">
 		<div class="row">
@@ -127,4 +132,5 @@ foreach ($tasks as $task) {
 	<?php		}
 }
 
+require("../../resources/templates/footer.php");
 ?>
