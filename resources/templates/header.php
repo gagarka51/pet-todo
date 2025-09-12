@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if (empty($_SESSION['auth'])) {
+	header('Location: ../index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

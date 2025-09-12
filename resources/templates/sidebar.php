@@ -1,3 +1,13 @@
+<?php 
+
+include_once "../config/db.php";
+include_once "../handlers/pagination.php";
+	
+$user_id = $_SESSION['user_id'];
+$user = $db->query("SELECT * FROM `users` WHERE `id` ='$user_id'")->fetch_assoc();
+$tasks = $db->query("SELECT * FROM `tasks` WHERE `user_id` ='$user_id'")->fetch_all(MYSQLI_ASSOC);
+
+?>
 <div class="sidebar container">
 		<div class="row">
 			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
