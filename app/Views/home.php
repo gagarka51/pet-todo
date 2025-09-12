@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ваш незаменимый помощник</title>
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="../../resources/css/style.css">
 </head>
 <body>
 	<header>
@@ -22,7 +22,7 @@
 			<div class="card w-50 my-5 mx-auto"> 
 				<div class="card-body"> 
 					<div class="card-info text-center">
-						<img src="assets/img/iconfinder-social-media-work-4341270_120574.svg" alt="main img" class="w-50 text-center main-img">
+						<img src="../../resources/img/iconfinder-social-media-work-4341270_120574.svg" alt="main img" class="w-50 text-center main-img">
 						<p class="card-text h4"><strong class="text-primary">ToDo</strong> – ваш незаменимый помощник в ежедневной рутине..</p> 
 					</div>
 					
@@ -52,7 +52,7 @@
 						</div>
 
 						<button type="submit" class="btn btn-primary mt-4" name="login">Вход</button>
-						<a class="btn mt-4 btn-registration" href="view/registration.php">Регистрация</a>
+						<a class="btn mt-4 btn-registration" href="registration.php">Регистрация</a>
 					</form>
 				</div> 
 			</div>
