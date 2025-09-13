@@ -2,8 +2,8 @@
 
 session_start();
 
-use Core\Config;
-use Core\Router;
+use App\Core\Config;
+use App\Core\Router;
 //require_once "../app/Core/Config.php";
 //require_once "../app/Core/Router.php";
 require __DIR__ . "/../vendor/autoload.php";
