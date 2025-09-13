@@ -6,6 +6,6 @@ class HomeController
 {
 	public function index()
 	{
-		return header("Location: ../Views/registration.php");
+		require_once "../Views/home.php";
 	}
 }
