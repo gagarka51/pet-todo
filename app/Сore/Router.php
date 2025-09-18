@@ -6,7 +6,8 @@ use App\Core\Config;
 
 class Router
 {
-	public function dispatch(string $uri) {
+	public function dispatch(string $uri) 
+	{
 		list($controllerName, $method) = explode("/", ltrim($uri, "/"));
 
 		$controllerClass = empty($controllerName) ? Config::DEFAULT_CONTROLLER : ucfirst($controllerName) . "Controller";
