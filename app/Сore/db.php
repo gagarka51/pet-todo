@@ -1,6 +1,17 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'todo');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+/**
+ * 
+ */
+class Db
+{
+	protected const DB_HOST = 'localhost';
+	protected const DB_NAME = 'todo';
+	protected const DB_USER = 'root';
+
+
+	/*function __construct(argument)
+	{
+		// code...
+	}*/
+}
