@@ -4,7 +4,7 @@ session_start();
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use App\Settings\{Config, Db, Router};
+use App\Settings\{Config, Router};
 use App\Controllers\HomeController;
 
 $controller = new HomeController();
