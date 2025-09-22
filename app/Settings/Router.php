@@ -6,8 +6,8 @@ use App\Core\Config;
 
 class Router
 {
-	public function dispatch(string $uri) 
+	public function dispatch(string $url) 
 	{
-		var_dump($uri);
+		var_dump($url);
 	}
 }
