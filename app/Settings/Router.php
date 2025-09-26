@@ -13,15 +13,12 @@ class Router
 		$this->routes = require_once("routes/web.php");
 	}
 
-	public function dispatch(string $url) 
+	public function dispatch(string $uri) 
 	{
-		print($_SERVER["REQUEST_METHOD"]);
-		var_dump($url);
-		print_r($this->routes);
-	}
-
-	public function getRoute($url, $class, $method)
-	{
-		print($url . "____" . $class . "______" . $method);
+		if ($uri !== "") {
+			
+		} else {
+			require_once("../Views/404.php");
+		}
 	}
 }
