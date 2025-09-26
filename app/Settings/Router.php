@@ -17,6 +17,7 @@ class Router
 	{
 		if ($uri !== "") {
 			foreach ($this->routes as $stUri => $clFunc) {
+				$uri = str_replace(".php", "", $uri);
 				$classFunc = self::separateClassFunc($clFunc);
 				if ($uri == $stUri) {
 					call_user_func([$classFunc[0], $classFunc[1]]);

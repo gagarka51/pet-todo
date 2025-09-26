@@ -6,12 +6,12 @@ use App\Models\User;
 
 class AuthController
 {
-	public function login()
+	public static function login()
 	{
 		require_once "../app/Views/home.php";
 	}
 
-	public function registration()
+	public static function registration()
 	{
 		require_once "../app/Views/registration.php";
 	}
