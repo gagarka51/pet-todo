@@ -15,8 +15,8 @@ class Router
 
 	public function dispatch(string $url) 
 	{
-		/*print($_SERVER["REQUEST_METHOD"]);
-		var_dump($url);*/
+		print($_SERVER["REQUEST_METHOD"]);
+		var_dump($url);
 		print_r($this->routes);
 	}
 

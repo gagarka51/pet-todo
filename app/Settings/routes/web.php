@@ -1,6 +1,6 @@
 <?php
 
 return [
-	"/" => "HomeController@index",
-	"/registration" => "AuthController@registration"
+	"/public/" => "HomeController@index",
+	"/public/registration" => "AuthController@registration"
 ];
