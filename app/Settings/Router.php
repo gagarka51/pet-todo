@@ -7,10 +7,16 @@ use App\Core\Config;
 class Router
 {
 	private $routes = [];
-
+	
 	public function dispatch(string $url) 
 	{
-		print($_SERVER["REQUEST_METHOD"]);
-		var_dump($url);
+		/*print($_SERVER["REQUEST_METHOD"]);
+		var_dump($url);*/
+		print_r($this->routes);
+	}
+
+	public function getRoute($url, $class, $method)
+	{
+		print($url . "____" . $class . "______" . $method);
 	}
 }

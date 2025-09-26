@@ -1,3 +1,6 @@
 <?php
 
-use App\Settings\Router;
+return [
+	"/" => "HomeController@index",
+	"/registration" => "AuthController@registration"
+];
