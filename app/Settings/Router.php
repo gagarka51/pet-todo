@@ -7,7 +7,12 @@ use App\Core\Config;
 class Router
 {
 	private $routes = [];
-	
+
+	public function __construct()
+	{
+		$this->routes = require_once("routes/web.php");
+	}
+
 	public function dispatch(string $url) 
 	{
 		/*print($_SERVER["REQUEST_METHOD"]);
